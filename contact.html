@@ -44,9 +44,19 @@
         <div class="col-md-12">
     <h1>Contactinformatie</h1>
   </div>
-  <div class="col-md-12">
+  <div class="col-md-4">
+    <p>Lars Horemans</p>
+    <p>Graduaat programmeren Thomas More</p>
+  </div>
+  <div class="col-md-4">
     <p>Telefoonnummer: 1234 56 78 90</p>
     <p>E-mail: Nepemail@verzonnen.be</p>
+  </div>
+  <div class="col-md-4">
+    <p>België</p>
+    <p>Nepstraat 0</p>
+    <p>0000</p>
+    <p>Nepgemeente</p>
   </div>
 </div>
 <div class="row">
@@ -54,16 +64,29 @@
     <h3>Wilt u contact opnemen?</h3>
   </div>
       <div class="col-md-12">
-    <form>
-        <p>Naam:<br></p>
-        <input type="text" name="naam"><br> 
-        <p>E-mailaddres<br></p>
-        <input type="email" name="email"><br>  
-        <p>Onderwerp:<br></p>  
-        <input type="text" name="onderwerp"><br>
-        <p>Vragen:</p>
-        <textarea rows="3" name="vraag"></textarea><br>
-    </form>
+        <form>
+          <div class="mb-3">
+            <label for="InputEmail" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="InputEmail">
+          </div>            
+          <div class="mb-3">
+            <label for="Naam" class="form-label">Naam</label>
+            <input type="Text" class="form-control" id="Naam">
+          </div>
+          <div class="mb-3">
+            <label for="Voornaam" class="form-label">Voornaam</label>
+            <input type="Text" class="form-control" id="Voornaam">
+          </div>
+          <div class="mb-3">
+            <label for="Vragen" class="form-label">Voornaam</label>
+            <textarea rows="4" cols="30"></textarea>
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Verzenden</button>
+        </form>
   </div>
   </div>
 </div>
